@@ -21,6 +21,7 @@ export default function Home() {
             href="https://github.com/a-ferraro007"
             className="self-end font-display text-primary-text font-medium lg:text-3xl lg:mr-10"
             target="_blank"
+            rel="noreferrer"
           >
             {' '}
             github{' '}
@@ -40,12 +41,12 @@ export default function Home() {
           </span>
           <p className="font-display text-3xl font-medium text-primary-text mt-4 mb-8">
             {' '}
-            Hi 👋, I'm Anthony. Frontend Engineer from New Haven, CT. Currently
-            working at Digital Surgeons.{' '}
+            {`Hi 👋, I'm Anthony. Frontend Engineer from New Haven, CT. Currently
+            working at Digital Surgeons.`}{' '}
           </p>
           <a className="font-display text-primary-light bg-primary-text rounded-img px-8 py-2">
             {' '}
-            Let's Talk!
+            {`Let's Talk!`}
           </a>
         </div>
 
