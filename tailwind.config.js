@@ -18,6 +18,10 @@ module.exports = {
       fontSize: {
         64: '64px'
       },
+      margin:{
+        25: '25px',
+        175: '150px'
+      },
       width: {},
       maxWidth: {
         528: '528px'

@@ -14,49 +14,60 @@ export default function Home() {
           }
         `}
       </style>
-      <nav className="flex h-14 px-10 justify-between">
+      <nav className="flex justify-between mx-2 mt-3 lg:mx-25 lg:mt-25 mb-175 h-14">
         <Coffee />
-        <div className=" flex flex-row">
+        <div className="flex flex-row ">
           <a
             href="https://github.com/a-ferraro007"
-            className="self-end font-display text-primary-text font-medium lg:text-3xl lg:mr-10"
+            className="self-end font-medium font-display text-primary-text lg:text-3xl lg:mr-10"
             target="_blank"
             rel="noreferrer"
-          >
+            >
             {' '}
             github{' '}
           </a>
           <LightBulb />
         </div>
       </nav>
-      <div className="lg:justify-center flex lg:flex-row mt-14">
-        <div className=" lg:self-center lg:mr-28 lg:max-w-528 mb-12">
-          <h1 className="font-display text-primary-text lg:text-64 font-semibold">
-            {' '}
-            Anthony Ferraro
-          </h1>
-          <span className="text-2xl text-primary-text font-secondary">
-            {' '}
-            Frontend Engineer
-          </span>
-          <p className="font-display text-3xl font-medium text-primary-text mt-4 mb-8">
-            {' '}
-            {`Hi 👋, I'm Anthony. Frontend Engineer from New Haven, CT. Currently
-            working at Digital Surgeons.`}{' '}
-          </p>
-          <a className="font-display text-primary-light bg-primary-text rounded-img px-8 py-2">
-            {' '}
-            {`Let's Talk!`}
-          </a>
-        </div>
+      <main>
+        <div className="flex flex-col-reverse lg:justify-center lg:flex-row">
+          <div className="mb-12 lg:self-center lg:mr-28 lg:max-w-528 "
+          >
+            <h1 className="font-semibold font-display text-primary-text lg:text-64">
+              {' '}
+              Anthony Ferraro
+            </h1>
+            <span className="text-2xl text-primary-text font-secondary">
+              {' '}
+              Frontend Engineer
+            </span>
+            <p className="mt-4 mb-8 text-3xl font-medium font-display text-primary-text">
+              {' '}
+              {`Hi 👋, I'm Anthony. Frontend Engineer from New Haven, CT. Currently
+              working at Digital Surgeons.`}{' '}
+            </p>
+            <a
+              href="mailto:adferra24@gmail.com" className="px-8 py-2 transition duration-500 border-2 hover:bg-transparent font-display text-primary-light bg-primary-text rounded-img hover:text-primary-text border-primary-text"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {' '}
+              {`Let's Talk!`}
+            </a>
+          </div>
 
-        <Image
-          className=" rounded-img img-border border-8 border-dashed border-blue-400"
-          src={profile}
-          height="450"
-          width="305"
-        />
-      </div>
+          <div className="w-52 lg:w-96">
+            <Image
+              className="border-8 border-blue-400 border-dashed rounded-img img-border"
+              alt="Overly dramatic picture of me eating a cookie."
+              src={profile}
+              layout="responsive"
+              height="131"
+              width="88"
+            />
+          </div>
+        </div>
+      </main>
     </>
   )
 }
