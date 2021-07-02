@@ -15,8 +15,8 @@ const Steam = () => {
     <svg
       className="absolute lg:top-25 lg:left-70 top-12 left-25"
       width="22"
-      height="22"
-      viewBox="0 0 22 18"
+      height="18"
+      viewBox="0 0 22 22"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
