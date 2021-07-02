@@ -11,6 +11,7 @@ const LightBulb = () => {
       theme.dispatch({ type: 'DARKMODE' })
     }
   }
+
   return (
     <svg
       className="self-end cursor-pointer"
