@@ -18,9 +18,9 @@ module.exports = {
       fontSize: {
         64: '64px'
       },
-      margin:{
+      margin: {
         25: '25px',
-        175: '150px'
+        175: '100px'
       },
       width: {},
       maxWidth: {

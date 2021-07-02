@@ -22,7 +22,7 @@ export default function Home() {
             className="self-end mr-3 text-3xl font-medium font-display text-primary-text lg:mr-10"
             target="_blank"
             rel="noreferrer"
-            >
+          >
             {' '}
             github{' '}
           </a>
@@ -31,8 +31,7 @@ export default function Home() {
       </nav>
       <main>
         <div className="flex flex-col-reverse px-10 lg:justify-center lg:flex-row">
-          <div className="mb-12 lg:self-center lg:mr-28 lg:max-w-528 "
-          >
+          <div className="lg:self-center lg:mr-28 lg:max-w-528 ">
             <h1 className="text-4xl font-semibold font-display text-primary-text lg:text-64">
               {' '}
               Anthony Ferraro
@@ -47,7 +46,8 @@ export default function Home() {
               working at Digital Surgeons.`}{' '}
             </p>
             <a
-              href="mailto:adferra24@gmail.com" className="px-8 py-2 font-semibold transition duration-300 border-2 hover:bg-transparent font-display text-primary-light bg-primary-text rounded-img hover:text-primary-text border-primary-text"
+              href="mailto:adferra24@gmail.com"
+              className="px-8 py-2 font-semibold transition duration-300 border-2 hover:bg-transparent font-display text-primary-light bg-primary-text rounded-img hover:text-primary-text border-primary-text"
               target="_blank"
               rel="noreferrer"
             >
@@ -56,7 +56,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="self-center mb-10 w-52 md:w-72 lg:w-96 lg:mb-0">
+          <div className="self-center mb-10 w-52 md:w-72 lg:w-80 lg:mb-0">
             <Image
               className="border-8 border-blue-400 border-dashed rounded-img img-border"
               alt="Overly dramatic picture of me eating a cookie."
