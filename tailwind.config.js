@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
       display: ['"Baloo 2"', 'cursive'],
@@ -10,10 +10,16 @@ module.exports = {
     extend: {
       colors: {
         'primary-light': '#F7F7F7',
-        'primary-text': '#1D1934'
+        'primary-text': '#1D1934',
+        'primary-dark-mode': '#1D3E53',
+        'dark-mode-text': '#77ABB7',
+        'primary-border': '#ad8fdb',
+        'dark-mode-cta': '#254B62',
+        'ice-white': '#EEEEEE'
       },
       borderRadius: {
-        img: '150px'
+        img: '150px',
+        'img-container': '160px'
       },
       fontSize: {
         64: '64px'
