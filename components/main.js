@@ -14,14 +14,33 @@ const Main = () => {
             {' '}
             Frontend Engineer
           </span>
-          <p className="mt-4 mb-8 text-xl font-medium lg:text-3xl font-display dark:text-dark-mode-text text-primary-text">
+          <p className=" px-2 mt-4 text-2xl font-medium lg:text-3xl font-display dark:text-dark-mode-text text-primary-text">
             {' '}
-            {`Hi 👋, I'm Anthony, a Frontend Engineer from New Haven, CT. Currently
-              working at Digital Surgeons.`}{' '}
+            {`Hi 👋, I'm Anthony!`}{' '}
           </p>
+
+          <div className="px-2">
+            <p className="mt-4 text-xl font-medium lg:text-2xl font-display dark:text-dark-mode-text text-primary-text">
+              {' '}
+              {`💻 `}
+              <a
+                className="ml-3"
+                href="https://www.digitalsurgeons.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Digital Surgeons
+              </a>{' '}
+            </p>
+            <p className=" mt-2 mb-8 text-xl font-medium lg:text-2xl font-display dark:text-dark-mode-text text-primary-text">
+              {' '}
+              📍 <span className="ml-3"> New Haven, CT</span>{' '}
+            </p>
+          </div>
+
           <a
             href="mailto:adferra24@gmail.com"
-            className="px-8 py-2 font-normal transition duration-300 border-2 hover:bg-transparent font-display text-primary-light bg-primary-text rounded-img hover:text-primary-text border-primary-text dark:bg-dark-mode-cta dark:border-dark-mode-cta dark:hover:bg-dark-mode-text dark:hover:border-dark-mode-text dark:hover:text-primary-dark-mode"
+            className="px-8 py-2 font-normal transition duration-300 border-2 hover:bg-transparent font-display text-primary-light bg-primary-text rounded-img hover:text-primary-text border-primary-text dark:bg-dark-mode-cta dark:border-dark-mode-cta dark:hover:bg-dark-mode-text dark:hover:border-dark-mode-text dark:hover:text-primary-dark-mode block text-center lg:w-1/2"
             target="_blank"
             rel="noreferrer"
           >
