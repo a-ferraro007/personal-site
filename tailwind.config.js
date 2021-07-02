@@ -20,7 +20,7 @@ module.exports = {
       },
       margin: {
         25: '25px',
-        175: '100px'
+        175: '75px'
       },
       width: {},
       maxWidth: {
