@@ -24,6 +24,12 @@ module.exports = {
       fontSize: {
         64: '64px'
       },
+      inset: {
+        10: '10px',
+        20: '20px',
+        25: '25px',
+        70: '70px'
+      },
       margin: {
         25: '25px',
         175: '75px'
