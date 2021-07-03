@@ -6,18 +6,18 @@ const Main = () => {
     <main>
       <div className="flex flex-col-reverse px-10 lg:justify-center lg:flex-row">
         <div className="lg:self-center lg:mr-28 lg:max-w-528 ">
-          <h1 className="text-4xl font-semibold font-display text-primary-text dark:text-dark-mode-text lg:text-64">
+          <h1 className="text-4xl font-semibold font-display text-primary-text dark:text-dark-mode-text lg:text-64 lg:mb-3">
             {' '}
-            Anthony Ferraro
+            {`Hi 👋, I'm Anthony.`}
           </h1>
           <span className="text-lg lg:text-2xl text-primary-text dark:text-ice-white font-secondary">
             {' '}
             Frontend Engineer
           </span>
-          <p className=" px-2 mt-4 text-2xl font-medium lg:text-3xl font-display dark:text-dark-mode-text text-primary-text">
+          {/*<p className=" px-2 mt-4 text-2xl font-medium lg:text-3xl font-display dark:text-dark-mode-text text-primary-text">
             {' '}
             {`Hi 👋, I'm Anthony!`}{' '}
-          </p>
+          </p>*/}
 
           <div className="px-2">
             <p className="mt-4 text-xl font-medium lg:text-2xl font-display dark:text-dark-mode-text text-primary-text">
