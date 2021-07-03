@@ -9,13 +9,12 @@ export const ThemeProvider = (props) => {
   const [state, dispatch] = useReducer(themeReducer, getInitialTheme())
 
   const setTheme = (darkMode) => {
-    console.log(darkMode)
     if (darkMode) {
       document.documentElement.classList.add('dark')
-      if (!window.localStorage.theme) window.localStorage.setItem('theme', true)
-    } else if (!darkMode) {
+      window.localStorage.setItem('theme', true)
+    } else if (darkMode === false) {
       document.documentElement.classList.remove('dark')
-      if (window.localStorage.theme) window.localStorage.removeItem('theme')
+      window.localStorage.setItem('theme', false)
     }
   }
 
