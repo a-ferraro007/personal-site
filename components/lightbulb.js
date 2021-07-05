@@ -21,7 +21,7 @@ const LightBulb = () => {
 
   return (
     <svg
-      className="self-end cursor-pointer pb-2"
+      className="self-end cursor-pointer mb-2"
       width="40"
       height="50"
       viewBox="0 0 40 40"
