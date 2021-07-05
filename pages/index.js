@@ -6,7 +6,6 @@ import {
   randomBias
 } from '@georgedoescode/generative-utils'
 import { SVG } from '@svgdotjs/svg.js'
-import Quadtree from '@timohausmann/quadtree-js'
 import { useEffect } from 'react'
 
 export default function Home() {
@@ -22,12 +21,12 @@ export default function Home() {
       x: random(0, width),
       y: random(0, height)
     }
-    const points = [...Array(50)].map(() => {
+    const points = [...Array(200)].map(() => {
       return {
         x: randomBias(0, width, focalPoint.x),
         y: randomBias(0, height, focalPoint.y),
-        width: 10,
-        height: 10
+        width: 1,
+        height: 1
       }
     })
     const grid = createQtGrid({
@@ -44,16 +43,16 @@ export default function Home() {
             .circle(Math.min(area.width, area.height))
             .x(area.x)
             .y(area.y)
-            .stroke('none')
-            .fill('#254B62')
+            .stroke('rgba(37, 75, 98, .75)')
+            .fill('transparent')
+        } else {
+          svg
+            .rect(area.width * 0.75, area.height * 0.75)
+            .x(area.x)
+            .y(area.y)
+            .stroke('rgba(37, 75, 98, .75)')
+            .fill('transparent')
         }
-      } else {
-        svg
-          .rect(area.width * 0.75, area.height * 0.75)
-          .x(area.x)
-          .y(area.y)
-          .stroke('#254B62')
-          .fill('transparent')
       }
     })
   }, [])
