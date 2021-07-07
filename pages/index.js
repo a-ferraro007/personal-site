@@ -1,12 +1,12 @@
-import NavBar from '../components/nav'
-import Main from '../components/main'
+import { useEffect, useContext } from 'react'
 import {
   random,
   createQtGrid,
   randomBias
 } from '@georgedoescode/generative-utils'
 import { SVG } from '@svgdotjs/svg.js'
-import { useEffect } from 'react'
+import NavBar from '../components/nav'
+import Main from '../components/main'
 
 export default function Home() {
   useEffect(() => {
