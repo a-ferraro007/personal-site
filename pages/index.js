@@ -11,11 +11,12 @@ import Main from '../components/main'
 export default function Home() {
   useEffect(() => {
     const width = window.innerWidth
-    const height = window.innerHeight - 50
+    const height = window.innerHeight - 50 //Full innerheight is causing scroll. idk why
     const svg = SVG()
       .viewbox(0, 0, width, height)
-      .size(width, height)
+      .size('100vw', height)
       .addTo('#svg')
+      .attr('preserveAspectRatio', 'xMidYMid slice')
 
     const focalPoint = {
       x: random(0, width),
