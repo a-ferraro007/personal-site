@@ -20,7 +20,7 @@ export default function Home() {
     }
 
     const width = window.innerWidth
-    const height = window.innerHeight - 50 //Full innerheight is causing scroll. idk why
+    const height = window.innerHeight //Full innerheight is causing scroll. idk why
     const svg = SVG()
       .viewbox(0, 0, width, height)
       .size('100vw', height)

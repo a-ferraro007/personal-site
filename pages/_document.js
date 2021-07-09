@@ -25,7 +25,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="relative px-3 lg:px-10 bg-primary-light dark:bg-primary-dark-mode">
+        <body className="relative px-3 lg:px-10 bg-primary-light dark:bg-primary-dark-mode lg:overflow-y-hidden">
           <Main />
           <NextScript />
         </body>
