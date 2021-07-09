@@ -1,7 +1,19 @@
+import { useContext, useEffect, useState } from 'react'
 import Image from 'next/image'
 import profile from '../public/profile.png'
+import Refresh from '../components/refresh.svg'
+import { ThemeContext } from '../provider'
 
-const Main = () => {
+const Main = (props) => {
+  const theme = useContext(ThemeContext)
+  const [fillColor, setFillColor] = useState()
+
+  useEffect(() => {
+    let color
+    theme.state.darkMode ? (color = '#77ABB7') : (color = '#1D1934')
+    setFillColor(color)
+  }, [theme])
+
   return (
     <main>
       <div
@@ -42,16 +54,21 @@ const Main = () => {
               📍 <span className="ml-3"> New Haven, CT</span>{' '}
             </p>
           </div>
-
-          <a
-            href="mailto:adferra24@gmail.com"
-            className="px-8 py-2 font-normal transition duration-300 border-2 hover:bg-transparent font-display text-primary-light bg-primary-text rounded-img hover:text-primary-text border-primary-text dark:bg-dark-mode-cta dark:border-dark-mode-cta dark:hover:bg-dark-mode-text dark:hover:border-dark-mode-text dark:hover:text-primary-dark-mode block text-center lg:w-1/2"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {' '}
-            {`Let's Talk!`}
-          </a>
+          <div className="flex flex-col lg:flex-row">
+            <a
+              href="mailto:adferra24@gmail.com"
+              className="px-8 py-2 font-normal transition duration-300 border-2 hover:bg-transparent font-display text-primary-light bg-primary-text rounded-img hover:text-primary-text border-primary-text dark:bg-dark-mode-cta dark:border-dark-mode-cta dark:hover:bg-dark-mode-text dark:hover:border-dark-mode-text dark:hover:text-primary-dark-mode block text-center lg:w-1/2 mb-4 lg:mb-0 mr-0 lg:mr-4"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {' '}
+              {`Let's Talk!`}
+            </a>
+            <button onClick={props.generate} className="self-center">
+              {' '}
+              <Refresh fill={fillColor} />{' '}
+            </button>
+          </div>
         </div>
 
         <div className="self-center mb-10 w-52 md:w-72 lg:w-80 lg:mb-0 border-8 border-primary-border border-dashed rounded-img-container p-1 dark:border-dark-mode-text">
