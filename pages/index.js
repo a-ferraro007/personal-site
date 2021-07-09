@@ -56,6 +56,7 @@ export default function Home() {
             .y(area.y)
             .stroke('rgba(37, 75, 98, 1)')
             .fill('transparent')
+            .attr('stroke-width', random(1, 2))
         } else if (rand > 0.5 && rand < 1) {
           svg
             .polygon([
@@ -70,6 +71,7 @@ export default function Home() {
             .y(area.y)
             .stroke('rgba(37, 75, 98, 1)')
             .fill('transparent')
+            .attr('stroke-width', random(1, 2))
         } else {
           svg
             .rect(area.width * random(0.25, 1), area.height * random(0.25, 1))
@@ -77,6 +79,7 @@ export default function Home() {
             .y(area.y)
             .stroke('rgba(37, 75, 98, 1)')
             .fill('transparent')
+            .attr('stroke-width', random(1, 2))
         }
       }
     })
