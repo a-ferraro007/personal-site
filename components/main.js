@@ -66,7 +66,11 @@ const Main = (props) => {
             </a>
             <button onClick={props.generate} className="self-center">
               {' '}
-              <Refresh fill={fillColor} />{' '}
+              {/* Need to find a better way to handle spin animation on click */}
+              <Refresh
+                fill={fillColor}
+                className="transform duration-500 active:rotate-360"
+              />{' '}
             </button>
           </div>
         </div>
