@@ -54,7 +54,7 @@ export default function Home() {
             .circle(Math.min(area.width, area.height))
             .x(area.x)
             .y(area.y)
-            .stroke('rgba(37, 75, 98, .75)')
+            .stroke('rgba(37, 75, 98, 1)')
             .fill('transparent')
         } else if (rand > 0.5 && rand < 1) {
           svg
@@ -68,14 +68,14 @@ export default function Home() {
             ])
             .x(area.x)
             .y(area.y)
-            .stroke('rgba(37, 75, 98, .75)')
+            .stroke('rgba(37, 75, 98, 1)')
             .fill('transparent')
         } else {
           svg
             .rect(area.width * random(0.25, 1), area.height * random(0.25, 1))
             .x(area.x)
             .y(area.y)
-            .stroke('rgba(37, 75, 98, .75)')
+            .stroke('rgba(37, 75, 98, 1)')
             .fill('transparent')
         }
       }
