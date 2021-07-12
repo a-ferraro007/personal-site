@@ -1,7 +1,6 @@
 import { getInitialTheme } from './helper'
 import themeReducer from './reducer'
-
-const { createContext, useReducer, useEffect } = require('react')
+import { createContext, useReducer, useEffect } from 'react'
 
 export const ThemeContext = createContext()
 
