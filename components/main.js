@@ -31,7 +31,7 @@ const Main = (props) => {
             {' '}
             Frontend Engineer
           </span>
-          {/*<p className=" px-2 mt-4 text-2xl font-medium lg:text-3xl font-display dark:text-dark-mode-text text-primary-text">
+          {/*<p className="px-2 mt-4 text-2xl font-medium  lg:text-3xl font-display dark:text-dark-mode-text text-primary-text">
             {' '}
             {`Hi 👋, I'm Anthony!`}{' '}
           </p>*/}
@@ -49,15 +49,15 @@ const Main = (props) => {
                 Digital Surgeons
               </a>{' '}
             </p>
-            <p className=" mt-2 mb-8 text-xl font-medium lg:text-2xl font-display dark:text-dark-mode-text text-primary-text">
+            <p className="mt-2 mb-8 text-xl font-medium  lg:text-2xl font-display dark:text-dark-mode-text text-primary-text">
               {' '}
-              📍 <span className="ml-3"> New Haven, CT</span>{' '}
+              📍 <span className="ml-3"> Brooklyn, NY</span>{' '}
             </p>
           </div>
           <div className="flex flex-col lg:flex-row">
             <a
               href="mailto:adferra24@gmail.com"
-              className="px-8 py-2 font-normal transition duration-300 border-2 hover:bg-transparent font-display text-primary-light bg-primary-text rounded-img hover:text-primary-text border-primary-text dark:bg-dark-mode-cta dark:border-dark-mode-cta dark:hover:bg-dark-mode-text dark:hover:border-dark-mode-text dark:hover:text-primary-dark-mode block text-center lg:w-1/2 mb-4 lg:mb-0 mr-0 lg:mr-4"
+              className="block px-8 py-2 mb-4 mr-0 font-normal text-center transition duration-300 border-2 hover:bg-transparent font-display text-primary-light bg-primary-text rounded-img hover:text-primary-text border-primary-text dark:bg-dark-mode-cta dark:border-dark-mode-cta dark:hover:bg-dark-mode-text dark:hover:border-dark-mode-text dark:hover:text-primary-dark-mode lg:w-1/2 lg:mb-0 lg:mr-4"
               target="_blank"
               rel="noreferrer"
             >
@@ -69,13 +69,13 @@ const Main = (props) => {
               {/* Need to find a better way to handle spin animation on click */}
               <Refresh
                 fill={fillColor}
-                className="transform duration-500 active:rotate-360"
+                className="duration-500 transform active:rotate-360"
               />{' '}
             </button>
           </div>
         </div>
 
-        <div className="self-center mb-10 w-52 md:w-72 lg:w-80 lg:mb-0 border-8 border-primary-border border-dashed rounded-img-container p-1 dark:border-dark-mode-text">
+        <div className="self-center p-1 mb-10 border-8 border-dashed w-52 md:w-72 lg:w-80 lg:mb-0 border-primary-border rounded-img-container dark:border-dark-mode-text">
           <Image
             className=" rounded-img"
             alt="Overly dramatic picture of me eating a cookie."
