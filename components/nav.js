@@ -21,6 +21,13 @@ const NavBar = () => {
 
       <div className="flex flex-row ">
         <a
+          href="/blogs"
+          className="self-end mr-3 text-3xl font-medium font-display text-primary-text lg:mr-10 dark:text-ice-white"
+        >
+          {' '}
+          blog{' '}
+        </a>
+        <a
           href="https://github.com/a-ferraro007"
           className="self-end mr-3 text-3xl font-medium font-display text-primary-text lg:mr-10 dark:text-ice-white"
           target="_blank"

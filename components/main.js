@@ -18,8 +18,8 @@ const Main = (props) => {
     <main>
       <div
         id="svg"
-        className="top-0 left-0"
-        style={{ position: 'absolute', zIndex: -1 }}
+        className="top-0 left-0 absolute"
+        style={{ zIndex: -1 }}
       ></div>
       <div className="flex flex-col-reverse px-10 lg:justify-center lg:flex-row">
         <div className="lg:self-center lg:mr-28 lg:max-w-528 ">
