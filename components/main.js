@@ -29,7 +29,7 @@ const Main = (props) => {
           </h1>
           <span className="text-lg lg:text-2xl text-primary-text dark:text-ice-white font-secondary">
             {' '}
-            Frontend Engineer
+            Software Engineer
           </span>
           {/*<p className=" px-2 mt-4 text-2xl font-medium lg:text-3xl font-display dark:text-dark-mode-text text-primary-text">
             {' '}
@@ -46,7 +46,7 @@ const Main = (props) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Digital Surgeons
+                LegalZoom
               </a>{' '}
             </p>
             <p className=" mt-2 mb-8 text-xl font-medium lg:text-2xl font-display dark:text-dark-mode-text text-primary-text">
